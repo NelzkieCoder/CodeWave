@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: category_articles
 title: Articles
 tagtitle: Articles
 tagline: These are the topics that I find interesting
@@ -13,6 +13,6 @@ order: 1
 category: articles
 ---
 
-Ookay
+
 
 

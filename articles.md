@@ -1,5 +1,5 @@
 ---
-layout: category_articles
+layout: category
 title: Articles
 tagtitle: Articles
 tagline: These are the topics that I find interesting

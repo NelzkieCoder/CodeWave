@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-11-11T22:33:18+13:00</updated><id>/</id><title type="html">Code And Wave</title><subtitle>Just Code and Wave coders. Just Code and Wave
+</subtitle><author><name>Nelzkie</name></author><entry xml:lang="en"><title type="html">Java Arrays</title><link href="/Java-Fundamentals-2.html" rel="alternate" type="text/html" title="Java Arrays" /><published>2017-10-28T21:13:28+13:00</published><updated>2017-10-28T21:13:28+13:00</updated><id>/Java-Fundamentals-2</id><content type="html" xml:base="/Java-Fundamentals-2.html">&lt;h2 id=&quot;arrays&quot;&gt;&lt;strong&gt;Arrays&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;What is an array? Think of array as a collection of data or information. It can be a collection &lt;a href=&quot;/152-Java-Fundaments-1.html&quot;&gt;primitive type&lt;/a&gt; we discuss earlier or objects(like classes) which we’ll discuss on future topic.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;h4 id=&quot;array-types&quot;&gt;Array types&lt;/h4&gt;
+&lt;h5 id=&quot;primitive-type-array&quot;&gt;&lt;strong&gt;Primitive type array&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;p&gt;To initialize a primitive type array with no defined max size limit, we initialize it like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// you add as many element as you want
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;b&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;c&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;d&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;we could also declare the max size of the array which is this example the max is &lt;strong&gt;5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArray4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// default value of all 5 element is 0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;object-type-array&quot;&gt;&lt;strong&gt;Object type array&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;To initialize an object array with no defined max size limit, we initialize it like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;  &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strings&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Code&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;and&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Wave&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// this is an object 
+&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;MyClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myClasses&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MyClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MyClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()};&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// this is an object too&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;warning&quot;&gt; &lt;span style=&quot;font-weight:bold;&quot;&gt;NOTE:&lt;/span&gt; Keep in mind that strings are objects and not primitive type&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+We haven’t covered objects and classes yet so as always just skip that part for now. I Just put it there to state that &lt;strong&gt;arrays&lt;/strong&gt; can be primitive and non-primitive.&lt;/p&gt;
+
+&lt;h4 id=&quot;displaying-specific-element-of-an-array&quot;&gt;Displaying specific element of an array?&lt;/h4&gt;
+&lt;p&gt;This can be a bit confusing. Say for example we have an array of int like this&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// On index 0 we assign value of 10
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// On index 1 we assign value of 20
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// On index 2 we assign value of 30
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// On index 3 we assign value of 40
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// On index 4 we assign value of 50
+&lt;/span&gt;
+
+ &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intArray4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// will display 10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;on the example the &lt;strong&gt;intArrays[0]&lt;/strong&gt; is the first element which we assign a value of 10. Then what is &lt;strong&gt;index&lt;/strong&gt;? Index is the position of a certain element inside of the array. To visualize it. Take a loot at this image&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/image/arrays.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;span style=&quot;color:blue&quot;&gt; &lt;strong&gt;blue&lt;/strong&gt; &lt;/span&gt; ones are the value we assign and the &lt;span style=&quot;color:red&quot;&gt; &lt;strong&gt;red&lt;/strong&gt; &lt;/span&gt; ones are the &lt;strong&gt;indexes&lt;/strong&gt;(or indices????) so when we display an element of array we do it like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intArray4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// will display 10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;although we haven’t covered loop yet, we could also loop through the whole array and display each element&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;a:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// will display each element
+&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here is the whole code&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;b&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;c&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;d&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;70&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strings&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Code&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;and&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Wave&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+        
+
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;a:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intArrays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Instead of declaring a lot of variable with the same &lt;a href=&quot;/152-Java-Fundaments-1.html&quot;&gt;data type&lt;/a&gt;, we could instead use an array and just call the element by index. Hopefully you now have a better understand of how array works.&lt;/p&gt;</content><author><name>Nelzkie</name></author><category term="articles" /><category term="Java" /><summary type="html">Arrays
+What is an array? Think of array as a collection of data or information. It can be a collection primitive type we discuss earlier or objects(like classes) which we’ll discuss on future topic.
+
+
+
+Array types
+Primitive type array
+
+To initialize a primitive type array with no defined max size limit, we initialize it like this:
+
+int[] intArray = {1,2,3,4,5,6,7,8}; // you add as many element as you want
+
+char[] chars = {&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;};
+
+we could also declare the max size of the array which is this example the max is 5
+
+int[] intArray4 = new int[5]; // default value of all 5 element is 0
+
+Object type array
+To initialize an object array with no defined max size limit, we initialize it like this:
+
+  String[] strings = {&quot;Hello&quot;,&quot;World&quot;,&quot;Code&quot;,&quot;and&quot;,&quot;Wave&quot;}; // this is an object 
+
+  MyClass[] myClasses = {new MyClass(),new MyClass()};  // this is an object too
+
+
+ NOTE: Keep in mind that strings are objects and not primitive type
+
+We haven’t covered objects and classes yet so as always just skip that part for now. I Just put it there to state that arrays can be primitive and non-primitive.
+
+Displaying specific element of an array?
+This can be a bit confusing. Say for example we have an array of int like this
+
+int[] intArrays = new int[5];
+intArrays[0]=10; // On index 0 we assign value of 10
+
+intArrays[1]=20; // On index 1 we assign value of 20
+
+intArrays[2]=30; // On index 2 we assign value of 30
+
+intArrays[3]=40; // On index 3 we assign value of 40
+
+intArrays[4]=50; // On index 4 we assign value of 50
+
+
+ System.out.println(intArray4[0]); // will display 10
+
+on the example the intArrays[0] is the first element which we assign a value of 10. Then what is index? Index is the position of a certain element inside of the array. To visualize it. Take a loot at this image
+
+
+
+The  blue  ones are the value we assign and the  red  ones are the indexes(or indices????) so when we display an element of array we do it like this:
+
+int[] intArrays = new int[5];
+System.out.println(intArray4[0]); // will display 10
+
+although we haven’t covered loop yet, we could also loop through the whole array and display each element
+
+int[] intArrays = new int[5];
+for (int a: intArrays){
+  System.out.println(a); // will display each element
+
+}
+
+Here is the whole code
+
+public static void main(String[] args) {
+
+
+        int[] intArray = {1,2,3,4,5,6,7,8};
+        char[] chars = {&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;};
+
+        int[] intArrays = new int[5];
+        intArrays[0]=10;
+        intArrays[1]=20;
+        intArrays[2]=70;
+        intArrays[3]=40;
+        intArrays[4]=50;
+        System.out.println(intArrays[0]);
+
+        String[] strings = {&quot;Hello&quot;,&quot;World&quot;,&quot;Code&quot;,&quot;and&quot;,&quot;Wave&quot;};
+        
+
+
+        for (int a: intArrays){
+            System.out.println(a);
+        }
+        
+    }
+
+Instead of declaring a lot of variable with the same data type, we could instead use an array and just call the element by index. Hopefully you now have a better understand of how array works.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/patterns/paisley.png" /></entry><entry xml:lang="en"><title type="html">Java Fundamentals 101</title><link href="/152-Java-Fundaments-1.html" rel="alternate" type="text/html" title="Java Fundamentals 101" /><published>2017-10-28T21:13:28+13:00</published><updated>2017-10-28T21:13:28+13:00</updated><id>/152-Java-Fundaments-1</id><content type="html" xml:base="/152-Java-Fundaments-1.html">&lt;h2 id=&quot;fundamentals-first-things-first&quot;&gt;&lt;strong&gt;Fundamentals. First things first&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Keep in mind that fundamentals don’t just apply to single programming language. In fact, it applies to any other programming language out there. Just like when you learn how to drive, it doesn’t apply only to a car made by Toyota, you can also drive ford or audi or Tesla. In this tutorial, I am using Java. There might be a small syntax change when using different language but the logic remains the same.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;h2 id=&quot;what-is-fundamentals-and-why-is-it-so-important&quot;&gt;What Is Fundamentals and why is it so important?&lt;/h2&gt;
+
+&lt;p&gt;Base on google search it means &lt;strong&gt;“a central or primary rule or principle on which something is based”&lt;/strong&gt;. Think of it this way, every complicated shape that you can draw start with a simple one(it can be square or circle or triangle).  If you want to be a good artist, you have to know when to use this shapes and how it correlates to the other shape. It’s all the same for programming. If you want to be a good programmer, you have to understand the fundamentals of programming. Do you want to be a good programmer? If so, then lets proceed.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;topics&quot;&gt;Topics:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Variables&lt;/li&gt;
+  &lt;li&gt;Data Types&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&quot;&gt;JDK&lt;/a&gt;, &lt;a href=&quot;https://www.jetbrains.com/idea/&quot;&gt;Intellij Idea Community Edition&lt;/a&gt; or &lt;a href=&quot;https://www.eclipse.org/ide/&quot;&gt;Eclipse IDE&lt;/a&gt;(&lt;em&gt;Though I recommend Intellij, Eclipse is just a pain to work with&lt;/em&gt;). Install it. I am not gonna show you have to do that. Cmon, you know how to browse the web, I am pretty sure you know how to install stuff on your computer. If you don’t know how to install, I suggest googling it.&lt;/p&gt;
+
+&lt;h3 id=&quot;target-audience&quot;&gt;&lt;strong&gt;Target Audience&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;People with no programming experience and just want to know and gain deeper knowledge of the basics.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-a-java-file&quot;&gt;&lt;strong&gt;Creating a Java File&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create new Project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img class=&quot;alignnone size-medium wp-image-171&quot; src=&quot;http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.22.28-PM-300x285.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;285&quot; srcset=&quot;http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.22.28-PM-300x285.png 300w, http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.22.28-PM.png 476w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click Next until you are on the Project name box.&lt;/li&gt;
+  &lt;li&gt;Name your Project “&lt;strong&gt;LessonOne&lt;/strong&gt;“&lt;/li&gt;
+  &lt;li&gt;Select the src folder. &lt;strong&gt;Right click&lt;/strong&gt; then select &lt;strong&gt;New&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Select &lt;strong&gt;Java Class&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Name it &lt;strong&gt;Main&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img class=&quot;alignnone size-medium wp-image-167&quot; src=&quot;http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-9.59.13-PM-300x63.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;63&quot; srcset=&quot;http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-9.59.13-PM-300x63.png 300w, http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-9.59.13-PM.png 525w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Inside the main class type&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img class=&quot;alignnone wp-image-169 size-medium&quot; src=&quot;http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.02.18-PM-300x80.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;80&quot; srcset=&quot;http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.02.18-PM-300x80.png 300w, http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.02.18-PM.png 690w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now. You’re done.&lt;/p&gt;
+
+&lt;h3 id=&quot;lets-get-started&quot;&gt;&lt;strong&gt;Let’s get started&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;variables&quot;&gt;&lt;strong&gt;Variables&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;What are variables? Variables sort of act like a piece of data that we can use or manipulate depending on our needs. It looks something like this&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mynumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A &lt;strong&gt;variable&lt;/strong&gt; is composed of 3 parts. The data type in the example its the “&lt;strong&gt;int&lt;/strong&gt;“, the variable name here its’ &lt;strong&gt;“mynumber”,&lt;/strong&gt; and the value which is &lt;strong&gt;1&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;data-types&quot;&gt;&lt;strong&gt;Data Types&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;h5 id=&quot;there-are-2-types-of-data-tpes&quot;&gt;&lt;strong&gt;There are 2 types of Data tpes&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;strong&gt;primitive&lt;/strong&gt; data types&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;object&lt;/strong&gt; data types&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For now, we will focus on primitive data types. I don’t want to overwhelm you with advance topic.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Primitive Data Type&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There are 8 primitive data types.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Boolean&lt;/li&gt;
+  &lt;li&gt;Byte&lt;/li&gt;
+  &lt;li&gt;Char&lt;/li&gt;
+  &lt;li&gt;Short&lt;/li&gt;
+  &lt;li&gt;Integer or int for short&lt;/li&gt;
+  &lt;li&gt;Long&lt;/li&gt;
+  &lt;li&gt;Float&lt;/li&gt;
+  &lt;li&gt;Double&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;boolean&quot;&gt;&lt;strong&gt;Boolean&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A Boolean consist of true or false. 1 or 0.&lt;/li&gt;
+  &lt;li&gt;Default value is false&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letmeguess&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;integer&quot;&gt;&lt;strong&gt;Integer&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An integer is usually used when you have a numerical value that is not decimal&lt;/li&gt;
+  &lt;li&gt;The maximum value you can have in an int is &lt;strong&gt;2,147,483,647.&lt;/strong&gt; The minimum is &lt;strong&gt;-2,147,483,647&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Default value is 0&lt;/li&gt;
+  &lt;li&gt;Consist of 4 bytes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mynumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;125000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;long&quot;&gt;&lt;strong&gt;Long&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Long is like Integer but with greater value&lt;/li&gt;
+  &lt;li&gt;Maximum value is &lt;strong&gt;9,223,372,036,854,775,807&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Minimum value is &lt;strong&gt;-9,223,372,036,854,775,807&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Default value is 0L&lt;/li&gt;
+  &lt;li&gt;Consist of 8 bytes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mylong&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000000L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;short&quot;&gt;&lt;strong&gt;Short&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Short is an integer but is smaller than Integer data type&lt;/li&gt;
+  &lt;li&gt;Minimum value is -32,768&lt;/li&gt;
+  &lt;li&gt;Maximum value is 32,767&lt;/li&gt;
+  &lt;li&gt;Consist of 2 bytes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myShort&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;float&quot;&gt;&lt;strong&gt;Float&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Float is use rarely other than when you’re doing a game as you need to use it in some advance calculation&lt;/li&gt;
+  &lt;li&gt;Default value is 0.0f&lt;/li&gt;
+  &lt;li&gt;Consist of 4 bytes&lt;/li&gt;
+  &lt;li&gt;6-7 decimal digits’ precision&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFloat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.9f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;double&quot;&gt;&lt;strong&gt;Double&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A Double is like a float but has a greater range of decimal numbers&lt;/li&gt;
+  &lt;li&gt;15-16 decimal digits&lt;/li&gt;
+  &lt;li&gt;Default value is 0.0d&lt;/li&gt;
+  &lt;li&gt;Consist of 8 bytes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDouble&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;102.905d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;byte&quot;&gt;&lt;strong&gt;Byte&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Byte is the smallest of all primitive types. 4 times smaller than an Integer. It only consists of 8 bits or 1 byte&lt;/li&gt;
+  &lt;li&gt;Maximum value is 127&lt;/li&gt;
+  &lt;li&gt;Minimum value is -128&lt;/li&gt;
+  &lt;li&gt;Default is 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;char&quot;&gt;&lt;strong&gt;Char&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A char is a 16 bits Unicode character (E.g ‘a’, ‘\u0041’, ‘\101’, ‘\’, ‘\”, ‘\n’, ‘ß’)&lt;/li&gt;
+  &lt;li&gt;In normal terms, a char is a letter&lt;/li&gt;
+  &lt;li&gt;Minimum value is ‘\u0000’&lt;/li&gt;
+  &lt;li&gt;Maximum value is ‘\uffff’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h4 id=&quot;woah-woah-woah-where-is-the-string-man&quot;&gt;&lt;strong&gt;Woah woah woah! Where is the String man?&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;If you declare a variable with String data type. That means string is an object data type. Why? Because String is an object. To be precise an array of chars. Think of string as something like this&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;h&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;e&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;l&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;l&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;o&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;we have not discussed arrays yet. We will discussed it  later on the next topic, for now ignore it.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h3 id=&quot;how-do-we-used-these-variables-in-a-program&quot;&gt;How do we used these variables in a program?&lt;/h3&gt;
+
+&lt;p&gt;There will be a bit of advanced topic that we haven’t covered yet so please don’t let it bother you and just ignore it for now.&lt;/p&gt;
+
+&lt;p&gt;Here is the code&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// or 10.0f
+&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;100.013d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100000000L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringmadeofchars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;h&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;e&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;l&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;l&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;&#39;o&#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The char is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The int is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The float is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The double is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The long is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The byte is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The short is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The boolean is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;helloString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stringmadeofchars&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Our string is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;helloString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;The&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;is a function that displays the data inside of the parenthesis in the console window of Intellij Idea.&lt;/p&gt;
+
+&lt;p&gt;Notice the &lt;strong&gt;new&lt;/strong&gt; keyword and the &lt;strong&gt;+&lt;/strong&gt; sign there? Yeah the &lt;strong&gt;new &lt;/strong&gt;keyword is use when declaring an object which well cover when we get to classes and objects and the &lt;strong&gt;+&lt;/strong&gt; sign is what we call an “&lt;strong&gt;operator&lt;/strong&gt;” which we’ll cover on the next topic. For now try the code on your own and be amazed!&lt;/p&gt;
+
+&lt;p&gt;Congratulations, you have now created a simple program. You can download the full source code &lt;strong&gt;&lt;a href=&quot;https://github.com/NelzkieCoder/CodeWithEase/tree/master&quot;&gt;here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You are now officially a programmer. A beginner programmer that is. But hey, remember that every &lt;strong&gt;PRO&lt;/strong&gt; was once a &lt;strong&gt;BEGINNER.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On the next topic we’ll  cover arrays.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;</content><author><name>Nelzkie</name></author><category term="articles" /><category term="Java" /><summary type="html">Fundamentals. First things first
+
+Keep in mind that fundamentals don’t just apply to single programming language. In fact, it applies to any other programming language out there. Just like when you learn how to drive, it doesn’t apply only to a car made by Toyota, you can also drive ford or audi or Tesla. In this tutorial, I am using Java. There might be a small syntax change when using different language but the logic remains the same.
+
+
+
+What Is Fundamentals and why is it so important?
+
+Base on google search it means “a central or primary rule or principle on which something is based”. Think of it this way, every complicated shape that you can draw start with a simple one(it can be square or circle or triangle).  If you want to be a good artist, you have to know when to use this shapes and how it correlates to the other shape. It’s all the same for programming. If you want to be a good programmer, you have to understand the fundamentals of programming. Do you want to be a good programmer? If so, then lets proceed.
+
+
+
+Topics:
+
+
+  Variables
+  Data Types
+
+
+Prerequisites
+
+JDK, Intellij Idea Community Edition or Eclipse IDE(Though I recommend Intellij, Eclipse is just a pain to work with). Install it. I am not gonna show you have to do that. Cmon, you know how to browse the web, I am pretty sure you know how to install stuff on your computer. If you don’t know how to install, I suggest googling it.
+
+Target Audience
+
+People with no programming experience and just want to know and gain deeper knowledge of the basics.
+
+Creating a Java File
+
+
+  Create new Project
+
+
+
+
+ 
+
+
+  Click Next until you are on the Project name box.
+  Name your Project “LessonOne“
+  Select the src folder. Right click then select New.
+  Select Java Class
+  Name it Main
+
+
+
+
+Inside the main class type
+
+public static void main(String[] args) {
+    
+}
+
+
+
+Now. You’re done.
+
+Let’s get started
+
+Variables
+
+What are variables? Variables sort of act like a piece of data that we can use or manipulate depending on our needs. It looks something like this
+
+int mynumber = 1; 
+
+A variable is composed of 3 parts. The data type in the example its the “int“, the variable name here its’ “mynumber”, and the value which is 1.
+
+Data Types
+
+There are 2 types of Data tpes
+
+
+  The primitive data types
+  The object data types
+
+
+For now, we will focus on primitive data types. I don’t want to overwhelm you with advance topic.
+
+Primitive Data Type
+
+There are 8 primitive data types.
+
+
+  Boolean
+  Byte
+  Char
+  Short
+  Integer or int for short
+  Long
+  Float
+  Double
+
+
+Boolean
+
+
+  A Boolean consist of true or false. 1 or 0.
+  Default value is false
+
+boolean letmeguess = true;  
+
+Integer
+
+
+  An integer is usually used when you have a numerical value that is not decimal
+  The maximum value you can have in an int is 2,147,483,647. The minimum is -2,147,483,647
+  Default value is 0
+  Consist of 4 bytes
+
+int mynumber = 125000;  
+
+Long
+
+
+  Long is like Integer but with greater value
+  Maximum value is 9,223,372,036,854,775,807
+  Minimum value is -9,223,372,036,854,775,807
+  Default value is 0L
+  Consist of 8 bytes
+
+int mylong = 10000000L;  
+
+Short
+
+
+  Short is an integer but is smaller than Integer data type
+  Minimum value is -32,768
+  Maximum value is 32,767
+  Consist of 2 bytes
+
+int myShort = 2000;  
+
+Float
+
+
+  Float is use rarely other than when you’re doing a game as you need to use it in some advance calculation
+  Default value is 0.0f
+  Consist of 4 bytes
+  6-7 decimal digits’ precision
+
+int myFloat = 10.9f; 
+
+Double
+
+
+  A Double is like a float but has a greater range of decimal numbers
+  15-16 decimal digits
+  Default value is 0.0d
+  Consist of 8 bytes
+
+int myDouble = 102.905d;  
+
+Byte
+
+
+  Byte is the smallest of all primitive types. 4 times smaller than an Integer. It only consists of 8 bits or 1 byte
+  Maximum value is 127
+  Minimum value is -128
+  Default is 0
+
+byte b = 1; 
+
+Char
+
+
+  A char is a 16 bits Unicode character (E.g ‘a’, ‘\u0041’, ‘\101’, ‘\’, ‘\”, ‘ ’, ‘ß’)
+  In normal terms, a char is a letter
+  Minimum value is ‘\u0000’
+  Maximum value is ‘\uffff’
+
+char a = &#39;a&#39;; 
+
+ 
+
+Woah woah woah! Where is the String man?
+
+If you declare a variable with String data type. That means string is an object data type. Why? Because String is an object. To be precise an array of chars. Think of string as something like this
+
+char[] string = {&#39;h&#39;,&#39;e&#39;,&#39;l&#39;,&#39;l&#39;,&#39;o&#39;};
+
+we have not discussed arrays yet. We will discussed it  later on the next topic, for now ignore it.
+
+ 
+
+How do we used these variables in a program?
+
+There will be a bit of advanced topic that we haven’t covered yet so please don’t let it bother you and just ignore it for now.
+
+Here is the code
+
+public static void main(String[] args) {
+    char a = &#39;a&#39;;
+    int x = 100000;
+    float f = 10f; // or 10.0f
+
+    double d = 100.013d;
+    long l = 100000000L;
+    byte b = 1;
+    short s = 2000;
+    boolean bool = true;
+    char[] stringmadeofchars = {&#39;h&#39;,&#39;e&#39;,&#39;l&#39;,&#39;l&#39;,&#39;o&#39;};
+
+    System.out.println(&quot;The char is &quot; + a);
+    System.out.println(&quot;The int is &quot; + x);
+    System.out.println(&quot;The float is &quot; + f);
+    System.out.println(&quot;The double is &quot; + d);
+    System.out.println(&quot;The long is &quot; + l);
+    System.out.println(&quot;The byte is &quot; + b);
+    System.out.println(&quot;The short is &quot; + s);
+    System.out.println(&quot;The boolean is &quot; + bool);
+
+    String helloString = new String(stringmadeofchars);
+    System.out.println(&quot;Our string is &quot; + helloString);
+}
+
+ 
+
+The
+System.out.println()
+
+is a function that displays the data inside of the parenthesis in the console window of Intellij Idea.
+
+Notice the new keyword and the + sign there? Yeah the new keyword is use when declaring an object which well cover when we get to classes and objects and the + sign is what we call an “operator” which we’ll cover on the next topic. For now try the code on your own and be amazed!
+
+Congratulations, you have now created a simple program. You can download the full source code here
+
+You are now officially a programmer. A beginner programmer that is. But hey, remember that every PRO was once a BEGINNER.
+
+On the next topic we’ll  cover arrays.
+
+ </summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/patterns/paisley.png" /></entry><entry xml:lang="en"><title type="html">Repeat</title><link href="/example-project-page.html" rel="alternate" type="text/html" title="Repeat" /><published>2017-10-07T00:00:00+13:00</published><updated>2017-10-07T00:00:00+13:00</updated><id>/example-project-page</id><content type="html" xml:base="/example-project-page.html">&lt;p&gt;&lt;a href=&quot;/assets/img/14.png&quot;&gt;&lt;img src=&quot;/assets/img/14.png&quot; alt=&quot;image_projects&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/assets/img/1.png&quot;&gt;&lt;img src=&quot;/assets/img/1.png&quot; alt=&quot;image_projects&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/assets/img/10.png&quot;&gt;&lt;img src=&quot;/assets/img/10.png&quot; alt=&quot;image_projects&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/assets/img/6.png&quot;&gt;&lt;img src=&quot;/assets/img/6.png&quot; alt=&quot;image_projects&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;a-simple-goal-and-habit-tracker-that-works&quot;&gt;&lt;strong&gt;A simple goal and habit tracker that works&lt;/strong&gt;.&lt;/h4&gt;
+
+&lt;p&gt;This is my first completed android project release on google play. The app focus on the core concept of habit tracking, but with added concept of
+choosing between the pain of regret or the pain of discipline.&lt;/p&gt;
+
+&lt;!--break--&gt;
+&lt;h4 id=&quot;so-why-name-repeat&quot;&gt;&lt;strong&gt;So why name Repeat&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;In order to form a new &lt;span style=&quot;color:#e4a048;&quot;&gt;habit&lt;/span&gt;, one must do it a lot of times (&lt;span style=&quot;color:#e4a048;&quot;&gt;&lt;em&gt;70 days&lt;/em&gt;&lt;/span&gt;) hence the name &lt;span style=&quot;color:#e4a048;&quot;&gt;&lt;strong&gt;Repeat&lt;/strong&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;The app focus on &lt;span style=&quot;color:#e4a048;&quot;&gt;&lt;strong&gt;simplicity&lt;/strong&gt;&lt;/span&gt;. &lt;span style=&quot;color:#e4a048;&quot;&gt;&lt;strong&gt;No&lt;/strong&gt;&lt;/span&gt; &lt;span style=&quot;color:#e4a048;&quot;&gt;&lt;em&gt;confusing&lt;/em&gt;&lt;/span&gt; UI or graphs (&lt;em&gt;graphs stresses me out&lt;/em&gt;) instead the app motivates you not by actually looking at the graphs or calendar but by reminding you the feelings or emotion you will get if you accomplished your goal or failed to do it. Think of it this way, we all do something for a reason, it’s either that will make us &lt;span style=&quot;color:#e4a048;&quot;&gt;&lt;strong&gt;happy&lt;/strong&gt;&lt;/span&gt; or that will make us &lt;span style=&quot;color:#e4a048;&quot;&gt;&lt;strong&gt;misserable&lt;/strong&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-we-do-what-we-do&quot;&gt;&lt;strong&gt;Why we do what we do&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Do you go to a job that you really really hate? If yes, why do yo go there in the first place? You know why? It’s because it is more painful if we don’t have a job and don’t have any food on our plate and that is even worse if we have a family to support. This is the &lt;span style=&quot;color:#e4a048;&quot;&gt;core concept&lt;/span&gt; of the app, when you’re feeling lazy the app reminds you of the consequence if you didn’t do it, at the same time it will also remind you of the positive things that will happen if you do the newly formed habit.&lt;/p&gt;
+
+&lt;h4 id=&quot;you-dont-have-to-read-notification-anymore&quot;&gt;&lt;strong&gt;You don’t have to read notification anymore&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;I decided to add a google voice that will read my task for me for those people who don’t read their notification. Pretty neat.&lt;/p&gt;
+
+&lt;h4 id=&quot;free-and-will-remain-to-be-so&quot;&gt;&lt;strong&gt;Free and will remain to be so&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The app is completely free and no ads whatsoever. The app will be updated a lot. I will soon add features that I think will make the experience for users better.&lt;/p&gt;
+
+&lt;p&gt;You can check the &lt;span style=&quot;color:#e4a048;&quot;&gt;&lt;strong&gt;Repeat&lt;/strong&gt;&lt;/span&gt; app here &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.nelzkie.coder.justfortoday&quot;&gt;google play store page &lt;/a&gt;&lt;/p&gt;</content><author><name>Nelzkie</name></author><category term="projects" /><category term="Projects" /><category term="Android" /><summary type="html">A simple goal and habit tracker that works.
+
+This is my first completed android project release on google play. The app focus on the core concept of habit tracking, but with added concept of
+choosing between the pain of regret or the pain of discipline.
+
+
+So why name Repeat
+In order to form a new habit, one must do it a lot of times (70 days) hence the name Repeat.
+
+The app focus on simplicity. No confusing UI or graphs (graphs stresses me out) instead the app motivates you not by actually looking at the graphs or calendar but by reminding you the feelings or emotion you will get if you accomplished your goal or failed to do it. Think of it this way, we all do something for a reason, it’s either that will make us happy or that will make us misserable.
+
+Why we do what we do
+Do you go to a job that you really really hate? If yes, why do yo go there in the first place? You know why? It’s because it is more painful if we don’t have a job and don’t have any food on our plate and that is even worse if we have a family to support. This is the core concept of the app, when you’re feeling lazy the app reminds you of the consequence if you didn’t do it, at the same time it will also remind you of the positive things that will happen if you do the newly formed habit.
+
+You don’t have to read notification anymore
+I decided to add a google voice that will read my task for me for those people who don’t read their notification. Pretty neat.
+
+Free and will remain to be so
+The app is completely free and no ads whatsoever. The app will be updated a lot. I will soon add features that I think will make the experience for users better.
+
+You can check the Repeat app here google play store page</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/patterns/paisley.png" /></entry></feed>

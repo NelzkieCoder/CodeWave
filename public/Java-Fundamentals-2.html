@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    
+
+    
+
+
+
+  
+
+
+
+
+
+
+
+
+
+    <!-- Non social metatags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#157878">
+
+    
+
+    
+
+
+
+    <title>Java Arrays</title>
+
+    
+      <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+<html itemscope itemtype="http://schema.org/Article">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Place this data between the <head> tags of your website -->
+
+  <meta name="author" content="Nelzkie" />
+
+<meta name="description" content="Arrays
+What is an array? Think of array as a collection of data or information. It can be a collection primitive type we discuss earlier or objects(like classes) which we’ll discuss on future topic.
+
+
+
+Array types
+Primitive type array
+
+To initialize a primitive type array with no defined max size..." />
+
+  <meta name="keywords" itemprop="tags" content="Java"/>
+
+
+  <meta name="keywords" itemprop="keywords" content="Java, Fundamentals, Basic, Arrays" />
+
+
+  <meta name="keywords" itemprop="categories" content="articles" />
+
+
+  <meta name="keywords" itemprop="category" content="" />
+
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Java Arrays" />
+<meta itemprop="description" content="Arrays
+What is an array? Think of array as a collection of data or information. It can be a collection primitive type we discuss earlier or objects(like classes) which we’ll discuss on future topic.
+
+
+
+Array types
+Primitive type array
+
+To initialize a primitive type array with no defined max size..." />
+
+  <meta itemprop="image" content="/assets/patterns/paisley.png" />
+
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image" />
+
+
+
+<meta name="twitter:title" content="Java Arrays" />
+<meta name="twitter:description" content="Arrays
+What is an array? Think of array as a collection of data or information. It can be a collection primitive type we discuss earlier or objects(like classes) which we’ll discuss on future topic.
+
+
+
+Array types
+Primitive type array
+
+To initialize a primitive type array with no defined max size..." />
+
+
+  <meta name="twitter:creator" content="@CodeandWave" />
+
+
+<!-- Twitter summary card with large image must be at least 280x150px -->
+
+  <meta name="twitter:image:src" content="/assets/patterns/paisley.png" />
+  <meta name="twitter:image" content="/assets/patterns/paisley.png" />
+
+<meta name="twitter:url" content="/Java-Fundamentals-2.html" />
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Java Arrays" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/Java-Fundamentals-2.html" />
+
+  <meta property="og:image" content="/assets/patterns/paisley.png" />
+
+<meta property="og:description" content="Arrays
+What is an array? Think of array as a collection of data or information. It can be a collection primitive type we discuss earlier or objects(like classes) which we’ll discuss on future topic.
+
+
+
+Array types
+Primitive type array
+
+To initialize a primitive type array with no defined max size..." />
+<meta property="og:site_name" content="Code And Wave" />
+
+
+<meta property="og:locale" content="en_US" />
+
+
+  <meta property="article:published_time" content="2017-10-28T21:13:28+13:00" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <meta property="article:tag" content="Java" />
+  
+
+
+
+  
+  
+    <meta property="article:tag" content="Java" />
+  
+    <meta property="article:tag" content="Fundamentals" />
+  
+    <meta property="article:tag" content="Basic" />
+  
+    <meta property="article:tag" content="Arrays" />
+  
+
+
+
+  
+    <meta property="article:tag" content="articles" />
+  
+
+
+
+  <meta property="article:tag" content="" />
+
+
+    
+
+    
+
+    <link rel="canonical" href="/Java-Fundamentals-2.html">
+
+    <link rel="alternate" type="application/rss+xml" title="Code And Wave" href="/feed-en.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="robots" content="noarchive">
+
+    <!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="">
+    <link rel="alternate" media="handheld" href=""> -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    
+
+  </head>
+  <body>
+    
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+      
+      
+  
+      
+        <a class="site-title" href="/">Code And Wave</a>
+      
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+              
+              
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/articles.html">Articles</a>
+              
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/projects.html">Projects</a>
+              
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/tags.html">Tags</a>
+              
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/about.html">About</a>
+              
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/contact.html">Contact</a>
+              
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    
+
+    
+
+    
+
+    <section class="page-header" id="particles-js">
+      <div class="absoluteholder">
+          <div style="position: relative; left: -50%; top:10%">
+              <h1 class="project-name">Java Arrays</h1>
+              <h2 class="project-tagline">Learning how to use arrays</h2>
+              
+
+              
+              <!-- Post tagline -->
+              
+              <!-- <h2 class="project-date">
+      </h2> -->
+              
+              <!-- End: Post tagline -->
+
+          </div>
+      </div>
+  </section>
+
+  <script src="/js/particles.js"></script>
+  <script src="/js/app.js"></script>
+    <section class="main-content">
+
+    
+
+      
+
+
+
+
+
+<div class="author-article">
+  <div class="author-picture">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="assets/img/profile-60.png" class="author-image" alt="Nelzkie on Facebook">
+    </a>
+  </div>
+
+  <div class="author-bio">
+    <a href="https://www.facebook.com/" target="_blank">
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">
+        Nelzkie
+      </span></span>
+    </a>
+    <div class="post-meta-list">nelzkie.coder@gmail.com</div>
+  </div>
+</div>
+
+<div class="post-meta">
+  <div>
+  <time datetime="2017-10-28T21:13:28+13:00" itemprop="datePublished">
+    
+    Oct
+      
+     28, 2017
+  </time>
+  <span style="padding-left: 5px; padding-right: 5px;"> • </span>
+  <span itemprop="readtime">
+    <!--
+  see:
+  https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/_includes/read-time.html -->
+
+
+
+
+
+
+  2 min read
+  </span>
+  <!-- <span style="padding-left: 5px; padding-right: 5px;"> • </span>
+  
+  <span><span class="fb-comments-count" data-href="/Java-Fundamentals-2.html">0</span> comments</span> -->
+</div>
+
+</div>
+
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div itemprop="articleBody">
+    <!-- 
+ -->
+    <br />
+    <h2 id="arrays"><strong>Arrays</strong></h2>
+<p>What is an array? Think of array as a collection of data or information. It can be a collection <a href="/152-Java-Fundaments-1.html">primitive type</a> we discuss earlier or objects(like classes) which we’ll discuss on future topic.</p>
+
+<!--break-->
+
+<h4 id="array-types">Array types</h4>
+<h5 id="primitive-type-array"><strong>Primitive type array</strong></h5>
+
+<p>To initialize a primitive type array with no defined max size limit, we initialize it like this:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span><span class="o">[]</span> <span class="n">intArray</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mi">5</span><span class="o">,</span><span class="mi">6</span><span class="o">,</span><span class="mi">7</span><span class="o">,</span><span class="mi">8</span><span class="o">};</span> <span class="c1">// you add as many element as you want
+</span>
+<span class="kt">char</span><span class="o">[]</span> <span class="n">chars</span> <span class="o">=</span> <span class="o">{</span><span class="sc">'a'</span><span class="o">,</span><span class="sc">'b'</span><span class="o">,</span><span class="sc">'c'</span><span class="o">,</span><span class="sc">'d'</span><span class="o">};</span></code></pre></figure>
+
+<p>we could also declare the max size of the array which is this example the max is <strong>5</strong></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span><span class="o">[]</span> <span class="n">intArray4</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">];</span> <span class="c1">// default value of all 5 element is 0</span></code></pre></figure>
+
+<h5 id="object-type-array"><strong>Object type array</strong></h5>
+<p>To initialize an object array with no defined max size limit, we initialize it like this:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java">  <span class="n">String</span><span class="o">[]</span> <span class="n">strings</span> <span class="o">=</span> <span class="o">{</span><span class="s">"Hello"</span><span class="o">,</span><span class="s">"World"</span><span class="o">,</span><span class="s">"Code"</span><span class="o">,</span><span class="s">"and"</span><span class="o">,</span><span class="s">"Wave"</span><span class="o">};</span> <span class="c1">// this is an object 
+</span>
+  <span class="n">MyClass</span><span class="o">[]</span> <span class="n">myClasses</span> <span class="o">=</span> <span class="o">{</span><span class="k">new</span> <span class="n">MyClass</span><span class="o">(),</span><span class="k">new</span> <span class="n">MyClass</span><span class="o">()};</span>  <span class="c1">// this is an object too</span></code></pre></figure>
+
+<p><br /></p>
+<p><span class="warning"> <span style="font-weight:bold;">NOTE:</span> Keep in mind that strings are objects and not primitive type</span></p>
+<p><br />
+We haven’t covered objects and classes yet so as always just skip that part for now. I Just put it there to state that <strong>arrays</strong> can be primitive and non-primitive.</p>
+
+<h4 id="displaying-specific-element-of-an-array">Displaying specific element of an array?</h4>
+<p>This can be a bit confusing. Say for example we have an array of int like this</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span><span class="o">[]</span> <span class="n">intArrays</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">];</span>
+<span class="n">intArrays</span><span class="o">[</span><span class="mi">0</span><span class="o">]=</span><span class="mi">10</span><span class="o">;</span> <span class="c1">// On index 0 we assign value of 10
+</span>
+<span class="n">intArrays</span><span class="o">[</span><span class="mi">1</span><span class="o">]=</span><span class="mi">20</span><span class="o">;</span> <span class="c1">// On index 1 we assign value of 20
+</span>
+<span class="n">intArrays</span><span class="o">[</span><span class="mi">2</span><span class="o">]=</span><span class="mi">30</span><span class="o">;</span> <span class="c1">// On index 2 we assign value of 30
+</span>
+<span class="n">intArrays</span><span class="o">[</span><span class="mi">3</span><span class="o">]=</span><span class="mi">40</span><span class="o">;</span> <span class="c1">// On index 3 we assign value of 40
+</span>
+<span class="n">intArrays</span><span class="o">[</span><span class="mi">4</span><span class="o">]=</span><span class="mi">50</span><span class="o">;</span> <span class="c1">// On index 4 we assign value of 50
+</span>
+
+ <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">intArray4</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span> <span class="c1">// will display 10</span></code></pre></figure>
+
+<p>on the example the <strong>intArrays[0]</strong> is the first element which we assign a value of 10. Then what is <strong>index</strong>? Index is the position of a certain element inside of the array. To visualize it. Take a loot at this image</p>
+
+<p><img src="/assets/image/arrays.png" alt="My helpful screenshot" /></p>
+
+<p>The <span style="color:blue"> <strong>blue</strong> </span> ones are the value we assign and the <span style="color:red"> <strong>red</strong> </span> ones are the <strong>indexes</strong>(or indices????) so when we display an element of array we do it like this:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span><span class="o">[]</span> <span class="n">intArrays</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">];</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">intArray4</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span> <span class="c1">// will display 10</span></code></pre></figure>
+
+<p>although we haven’t covered loop yet, we could also loop through the whole array and display each element</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span><span class="o">[]</span> <span class="n">intArrays</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">];</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="nl">a:</span> <span class="n">intArrays</span><span class="o">){</span>
+  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">);</span> <span class="c1">// will display each element
+</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Here is the whole code</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">intArray</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mi">5</span><span class="o">,</span><span class="mi">6</span><span class="o">,</span><span class="mi">7</span><span class="o">,</span><span class="mi">8</span><span class="o">};</span>
+        <span class="kt">char</span><span class="o">[]</span> <span class="n">chars</span> <span class="o">=</span> <span class="o">{</span><span class="sc">'a'</span><span class="o">,</span><span class="sc">'b'</span><span class="o">,</span><span class="sc">'c'</span><span class="o">,</span><span class="sc">'d'</span><span class="o">};</span>
+
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">intArrays</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">];</span>
+        <span class="n">intArrays</span><span class="o">[</span><span class="mi">0</span><span class="o">]=</span><span class="mi">10</span><span class="o">;</span>
+        <span class="n">intArrays</span><span class="o">[</span><span class="mi">1</span><span class="o">]=</span><span class="mi">20</span><span class="o">;</span>
+        <span class="n">intArrays</span><span class="o">[</span><span class="mi">2</span><span class="o">]=</span><span class="mi">70</span><span class="o">;</span>
+        <span class="n">intArrays</span><span class="o">[</span><span class="mi">3</span><span class="o">]=</span><span class="mi">40</span><span class="o">;</span>
+        <span class="n">intArrays</span><span class="o">[</span><span class="mi">4</span><span class="o">]=</span><span class="mi">50</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">intArrays</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+
+        <span class="n">String</span><span class="o">[]</span> <span class="n">strings</span> <span class="o">=</span> <span class="o">{</span><span class="s">"Hello"</span><span class="o">,</span><span class="s">"World"</span><span class="o">,</span><span class="s">"Code"</span><span class="o">,</span><span class="s">"and"</span><span class="o">,</span><span class="s">"Wave"</span><span class="o">};</span>
+        
+
+
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="nl">a:</span> <span class="n">intArrays</span><span class="o">){</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">);</span>
+        <span class="o">}</span>
+        
+    <span class="o">}</span></code></pre></figure>
+
+<p>Instead of declaring a lot of variable with the same <a href="/152-Java-Fundaments-1.html">data type</a>, we could instead use an array and just call the element by index. Hopefully you now have a better understand of how array works.</p>
+
+
+    <br />
+    <!-- 
+
+    
+ -->
+  </div>
+
+  
+
+  
+
+
+</article>
+
+
+      <footer class="site-footer">
+  <!-- SVG icons from https://iconmonstr.com -->
+
+  <!-- Github icon -->
+  
+
+  
+
+
+  <!-- Facebook icon -->
+  
+  
+
+  <!-- Instagram icon -->
+  
+
+  <!-- Twitter icon -->
+  
+  <span class="my-span-icon">
+    <a href="https://twitter.com/CodeandWave" target="_blank" aria-label="Nelzkie on Twitter" title="Nelzkie on Twitter">
+      <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+    </a>
+  </span>
+  
+
+  <!-- Linkedin icon -->
+  
+
+  <!-- RSS icon -->
+  <span class="my-span-icon hide-on-small">
+    <a href="/feed-en.xml" target="_blank" aria-label="RSS feed" title="Nelzkie's RSS feed">
+      <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.374 17c-.897 0-1.626-.727-1.626-1.624s.729-1.624 1.626-1.624 1.626.727 1.626 1.624-.729 1.624-1.626 1.624zm3.885 0c-.03-3.022-2.485-5.474-5.511-5.504v-2.406c4.361.03 7.889 3.555 7.92 7.91h-2.409zm4.081 0c-.016-5.297-4.303-9.571-9.592-9.594v-2.406c6.623.023 11.985 5.384 12 12h-2.408z"/></svg>
+    </a>
+  </span>
+
+  <!-- Contact icon -->
+  
+  
+    <span class="my-span-icon">
+      <a href="/contact.html" aria-label="Contact" title="Contact Nelzkie">
+        <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+      </a>
+    </span>
+  
+
+</footer>
+
+
+    </section>
+
+    <script type="text/javascript">
+      var menu = document.querySelector("nav.site-nav");
+      var checkbox = document.getElementById("nav-trigger");
+
+      // close menu if click outside menu
+      document.addEventListener("click", function(e) {
+        if (menu != e.target &&
+            ! isDescendant(menu, e.target)) {
+          checkbox.checked = false;
+        }
+
+      }, false);
+
+      function isDescendant(parent, child) {
+           var node = child.parentNode;
+           while (node != null) {
+               if (node == parent) {
+                   return true;
+               }
+               node = node.parentNode;
+           }
+           return false;
+      }
+
+    </script>
+  </body>
+</html>

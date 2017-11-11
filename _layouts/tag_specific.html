@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div>
+
+{{ content }}
+
+
+<!-- {% capture my_variable %}
+{{page.path | remove: "tags/" }}
+{% endcapture %}
+
+{{ my_variable }} -->
+
+{% include tag-posts-specific.html lang=page.lang category=page.category tag=my_variable %}
+
+</div>
+
+

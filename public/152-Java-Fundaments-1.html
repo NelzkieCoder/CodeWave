@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    
+
+    
+
+
+
+  
+
+
+
+
+
+
+
+
+
+    <!-- Non social metatags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#157878">
+
+    
+
+    
+
+
+
+    <title>Java Fundamentals 101</title>
+
+    
+      <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+<html itemscope itemtype="http://schema.org/Article">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Place this data between the <head> tags of your website -->
+
+  <meta name="author" content="Nelzkie" />
+
+<meta name="description" content="Fundamentals. First things first
+
+Keep in mind that fundamentals don’t just apply to single programming language. In fact, it applies to any other programming language out there. Just like when you learn how to drive, it doesn’t apply only to a car made by Toyota, you can also drive ford or audi ..." />
+
+  <meta name="keywords" itemprop="tags" content="Java"/>
+
+
+  <meta name="keywords" itemprop="keywords" content="Java, Fundamentals, Basic, Arrays" />
+
+
+  <meta name="keywords" itemprop="categories" content="articles" />
+
+
+  <meta name="keywords" itemprop="category" content="" />
+
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Java Fundamentals 101" />
+<meta itemprop="description" content="Fundamentals. First things first
+
+Keep in mind that fundamentals don’t just apply to single programming language. In fact, it applies to any other programming language out there. Just like when you learn how to drive, it doesn’t apply only to a car made by Toyota, you can also drive ford or audi ..." />
+
+  <meta itemprop="image" content="/assets/patterns/paisley.png" />
+
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image" />
+
+
+
+<meta name="twitter:title" content="Java Fundamentals 101" />
+<meta name="twitter:description" content="Fundamentals. First things first
+
+Keep in mind that fundamentals don’t just apply to single programming language. In fact, it applies to any other programming language out there. Just like when you learn how to drive, it doesn’t apply only to a car made by Toyota, you can also drive ford or audi ..." />
+
+
+  <meta name="twitter:creator" content="@CodeandWave" />
+
+
+<!-- Twitter summary card with large image must be at least 280x150px -->
+
+  <meta name="twitter:image:src" content="/assets/patterns/paisley.png" />
+  <meta name="twitter:image" content="/assets/patterns/paisley.png" />
+
+<meta name="twitter:url" content="/152-Java-Fundaments-1.html" />
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Java Fundamentals 101" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/152-Java-Fundaments-1.html" />
+
+  <meta property="og:image" content="/assets/patterns/paisley.png" />
+
+<meta property="og:description" content="Fundamentals. First things first
+
+Keep in mind that fundamentals don’t just apply to single programming language. In fact, it applies to any other programming language out there. Just like when you learn how to drive, it doesn’t apply only to a car made by Toyota, you can also drive ford or audi ..." />
+<meta property="og:site_name" content="Code And Wave" />
+
+
+<meta property="og:locale" content="en_US" />
+
+
+  <meta property="article:published_time" content="2017-10-28T21:13:28+13:00" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <meta property="article:tag" content="Java" />
+  
+
+
+
+  
+  
+    <meta property="article:tag" content="Java" />
+  
+    <meta property="article:tag" content="Fundamentals" />
+  
+    <meta property="article:tag" content="Basic" />
+  
+    <meta property="article:tag" content="Arrays" />
+  
+
+
+
+  
+    <meta property="article:tag" content="articles" />
+  
+
+
+
+  <meta property="article:tag" content="" />
+
+
+    
+
+    
+
+    <link rel="canonical" href="/152-Java-Fundaments-1.html">
+
+    <link rel="alternate" type="application/rss+xml" title="Code And Wave" href="/feed-en.xml">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="robots" content="noarchive">
+
+    <!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="">
+    <link rel="alternate" media="handheld" href=""> -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    
+
+  </head>
+  <body>
+    
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+      
+      
+  
+      
+        <a class="site-title" href="/">Code And Wave</a>
+      
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+              
+              
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/articles.html">Articles</a>
+              
+            
+          
+
+          
+            
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/projects.html">Projects</a>
+              
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/tags.html">Tags</a>
+              
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/about.html">About</a>
+              
+            
+          
+
+          
+            
+            
+              
+                <a class="page-link" href="/contact.html">Contact</a>
+              
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    
+
+    
+
+    
+
+    <section class="page-header" id="particles-js">
+      <div class="absoluteholder">
+          <div style="position: relative; left: -50%; top:10%">
+              <h1 class="project-name">Java Fundamentals 101</h1>
+              <h2 class="project-tagline">Variables and Data types</h2>
+              
+
+              
+              <!-- Post tagline -->
+              
+              <!-- <h2 class="project-date">
+      </h2> -->
+              
+              <!-- End: Post tagline -->
+
+          </div>
+      </div>
+  </section>
+
+  <script src="/js/particles.js"></script>
+  <script src="/js/app.js"></script>
+    <section class="main-content">
+
+    
+
+      
+
+
+
+
+
+<div class="author-article">
+  <div class="author-picture">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="assets/img/profile-60.png" class="author-image" alt="Nelzkie on Facebook">
+    </a>
+  </div>
+
+  <div class="author-bio">
+    <a href="https://www.facebook.com/" target="_blank">
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">
+        Nelzkie
+      </span></span>
+    </a>
+    <div class="post-meta-list">nelzkie.coder@gmail.com</div>
+  </div>
+</div>
+
+<div class="post-meta">
+  <div>
+  <time datetime="2017-10-28T21:13:28+13:00" itemprop="datePublished">
+    
+    Oct
+      
+     28, 2017
+  </time>
+  <span style="padding-left: 5px; padding-right: 5px;"> • </span>
+  <span itemprop="readtime">
+    <!--
+  see:
+  https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/_includes/read-time.html -->
+
+
+
+
+
+
+  5 min read
+  </span>
+  <!-- <span style="padding-left: 5px; padding-right: 5px;"> • </span>
+  
+  <span><span class="fb-comments-count" data-href="/152-Java-Fundaments-1.html">0</span> comments</span> -->
+</div>
+
+</div>
+
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div itemprop="articleBody">
+    <!-- 
+ -->
+    <br />
+    <h2 id="fundamentals-first-things-first"><strong>Fundamentals. First things first</strong></h2>
+
+<p>Keep in mind that fundamentals don’t just apply to single programming language. In fact, it applies to any other programming language out there. Just like when you learn how to drive, it doesn’t apply only to a car made by Toyota, you can also drive ford or audi or Tesla. In this tutorial, I am using Java. There might be a small syntax change when using different language but the logic remains the same.</p>
+
+<!--break-->
+
+<h2 id="what-is-fundamentals-and-why-is-it-so-important">What Is Fundamentals and why is it so important?</h2>
+
+<p>Base on google search it means <strong>“a central or primary rule or principle on which something is based”</strong>. Think of it this way, every complicated shape that you can draw start with a simple one(it can be square or circle or triangle).  If you want to be a good artist, you have to know when to use this shapes and how it correlates to the other shape. It’s all the same for programming. If you want to be a good programmer, you have to understand the fundamentals of programming. Do you want to be a good programmer? If so, then lets proceed.</p>
+
+<!--more-->
+
+<h3 id="topics">Topics:</h3>
+
+<ul>
+  <li>Variables</li>
+  <li>Data Types</li>
+</ul>
+
+<h3 id="prerequisites"><strong>Prerequisites</strong></h3>
+
+<p><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">JDK</a>, <a href="https://www.jetbrains.com/idea/">Intellij Idea Community Edition</a> or <a href="https://www.eclipse.org/ide/">Eclipse IDE</a>(<em>Though I recommend Intellij, Eclipse is just a pain to work with</em>). Install it. I am not gonna show you have to do that. Cmon, you know how to browse the web, I am pretty sure you know how to install stuff on your computer. If you don’t know how to install, I suggest googling it.</p>
+
+<h3 id="target-audience"><strong>Target Audience</strong></h3>
+
+<p>People with no programming experience and just want to know and gain deeper knowledge of the basics.</p>
+
+<h3 id="creating-a-java-file"><strong>Creating a Java File</strong></h3>
+
+<ul>
+  <li>Create new Project</li>
+</ul>
+
+<p><img class="alignnone size-medium wp-image-171" src="http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.22.28-PM-300x285.png" alt="" width="300" height="285" srcset="http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.22.28-PM-300x285.png 300w, http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.22.28-PM.png 476w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+
+<p> </p>
+
+<ul>
+  <li>Click Next until you are on the Project name box.</li>
+  <li>Name your Project “<strong>LessonOne</strong>“</li>
+  <li>Select the src folder. <strong>Right click</strong> then select <strong>New</strong>.</li>
+  <li>Select <strong>Java Class</strong></li>
+  <li>Name it <strong>Main</strong></li>
+</ul>
+
+<p><img class="alignnone size-medium wp-image-167" src="http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-9.59.13-PM-300x63.png" alt="" width="300" height="63" srcset="http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-9.59.13-PM-300x63.png 300w, http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-9.59.13-PM.png 525w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+
+<p>Inside the main class type</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    
+<span class="o">}</span></code></pre></figure>
+
+<p><img class="alignnone wp-image-169 size-medium" src="http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.02.18-PM-300x80.png" alt="" width="300" height="80" srcset="http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.02.18-PM-300x80.png 300w, http://nelzkiea.sgedu.site/nelzkie_coder/wp-content/uploads/2017/10/Screen-Shot-2017-10-28-at-10.02.18-PM.png 690w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+
+<p>Now. You’re done.</p>
+
+<h3 id="lets-get-started"><strong>Let’s get started</strong></h3>
+
+<h4 id="variables"><strong>Variables</strong></h4>
+
+<p>What are variables? Variables sort of act like a piece of data that we can use or manipulate depending on our needs. It looks something like this</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">mynumber</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> </code></pre></figure>
+
+<p>A <strong>variable</strong> is composed of 3 parts. The data type in the example its the “<strong>int</strong>“, the variable name here its’ <strong>“mynumber”,</strong> and the value which is <strong>1</strong>.</p>
+
+<h4 id="data-types"><strong>Data Types</strong></h4>
+
+<h5 id="there-are-2-types-of-data-tpes"><strong>There are 2 types of Data tpes</strong></h5>
+
+<ul>
+  <li>The <strong>primitive</strong> data types</li>
+  <li>The <strong>object</strong> data types</li>
+</ul>
+
+<p>For now, we will focus on primitive data types. I don’t want to overwhelm you with advance topic.</p>
+
+<p><strong>Primitive Data Type</strong></p>
+
+<p>There are 8 primitive data types.</p>
+
+<ul>
+  <li>Boolean</li>
+  <li>Byte</li>
+  <li>Char</li>
+  <li>Short</li>
+  <li>Integer or int for short</li>
+  <li>Long</li>
+  <li>Float</li>
+  <li>Double</li>
+</ul>
+
+<h4 id="boolean"><strong>Boolean</strong></h4>
+
+<ul>
+  <li>A Boolean consist of true or false. 1 or 0.</li>
+  <li>Default value is false</li>
+</ul>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">boolean</span> <span class="n">letmeguess</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>  </code></pre></figure>
+
+<h4 id="integer"><strong>Integer</strong></h4>
+
+<ul>
+  <li>An integer is usually used when you have a numerical value that is not decimal</li>
+  <li>The maximum value you can have in an int is <strong>2,147,483,647.</strong> The minimum is <strong>-2,147,483,647</strong></li>
+  <li>Default value is 0</li>
+  <li>Consist of 4 bytes</li>
+</ul>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">mynumber</span> <span class="o">=</span> <span class="mi">125000</span><span class="o">;</span>  </code></pre></figure>
+
+<h4 id="long"><strong>Long</strong></h4>
+
+<ul>
+  <li>Long is like Integer but with greater value</li>
+  <li>Maximum value is <strong>9,223,372,036,854,775,807</strong></li>
+  <li>Minimum value is <strong>-9,223,372,036,854,775,807</strong></li>
+  <li>Default value is 0L</li>
+  <li>Consist of 8 bytes</li>
+</ul>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">mylong</span> <span class="o">=</span> <span class="mi">10000000L</span><span class="o">;</span>  </code></pre></figure>
+
+<h4 id="short"><strong>Short</strong></h4>
+
+<ul>
+  <li>Short is an integer but is smaller than Integer data type</li>
+  <li>Minimum value is -32,768</li>
+  <li>Maximum value is 32,767</li>
+  <li>Consist of 2 bytes</li>
+</ul>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">myShort</span> <span class="o">=</span> <span class="mi">2000</span><span class="o">;</span>  </code></pre></figure>
+
+<h4 id="float"><strong>Float</strong></h4>
+
+<ul>
+  <li>Float is use rarely other than when you’re doing a game as you need to use it in some advance calculation</li>
+  <li>Default value is 0.0f</li>
+  <li>Consist of 4 bytes</li>
+  <li>6-7 decimal digits’ precision</li>
+</ul>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">myFloat</span> <span class="o">=</span> <span class="mf">10.9f</span><span class="o">;</span> </code></pre></figure>
+
+<h4 id="double"><strong>Double</strong></h4>
+
+<ul>
+  <li>A Double is like a float but has a greater range of decimal numbers</li>
+  <li>15-16 decimal digits</li>
+  <li>Default value is 0.0d</li>
+  <li>Consist of 8 bytes</li>
+</ul>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">myDouble</span> <span class="o">=</span> <span class="mf">102.905d</span><span class="o">;</span>  </code></pre></figure>
+
+<h4 id="byte"><strong>Byte</strong></h4>
+
+<ul>
+  <li>Byte is the smallest of all primitive types. 4 times smaller than an Integer. It only consists of 8 bits or 1 byte</li>
+  <li>Maximum value is 127</li>
+  <li>Minimum value is -128</li>
+  <li>Default is 0</li>
+</ul>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> </code></pre></figure>
+
+<h4 id="char"><strong>Char</strong></h4>
+
+<ul>
+  <li>A char is a 16 bits Unicode character (E.g ‘a’, ‘\u0041’, ‘\101’, ‘\’, ‘\”, ‘\n’, ‘ß’)</li>
+  <li>In normal terms, a char is a letter</li>
+  <li>Minimum value is ‘\u0000’</li>
+  <li>Maximum value is ‘\uffff’</li>
+</ul>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">char</span> <span class="n">a</span> <span class="o">=</span> <span class="sc">'a'</span><span class="o">;</span> </code></pre></figure>
+
+<p> </p>
+
+<h4 id="woah-woah-woah-where-is-the-string-man"><strong>Woah woah woah! Where is the String man?</strong></h4>
+
+<p>If you declare a variable with String data type. That means string is an object data type. Why? Because String is an object. To be precise an array of chars. Think of string as something like this</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kt">char</span><span class="o">[]</span> <span class="n">string</span> <span class="o">=</span> <span class="o">{</span><span class="sc">'h'</span><span class="o">,</span><span class="sc">'e'</span><span class="o">,</span><span class="sc">'l'</span><span class="o">,</span><span class="sc">'l'</span><span class="o">,</span><span class="sc">'o'</span><span class="o">};</span></code></pre></figure>
+
+<p>we have not discussed arrays yet. We will discussed it  later on the next topic, for now ignore it.</p>
+
+<p> </p>
+
+<h3 id="how-do-we-used-these-variables-in-a-program">How do we used these variables in a program?</h3>
+
+<p>There will be a bit of advanced topic that we haven’t covered yet so please don’t let it bother you and just ignore it for now.</p>
+
+<p>Here is the code</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">char</span> <span class="n">a</span> <span class="o">=</span> <span class="sc">'a'</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">100000</span><span class="o">;</span>
+    <span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="mi">10</span><span class="n">f</span><span class="o">;</span> <span class="c1">// or 10.0f
+</span>
+    <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">100.013d</span><span class="o">;</span>
+    <span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">100000000L</span><span class="o">;</span>
+    <span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">2000</span><span class="o">;</span>
+    <span class="kt">boolean</span> <span class="n">bool</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="kt">char</span><span class="o">[]</span> <span class="n">stringmadeofchars</span> <span class="o">=</span> <span class="o">{</span><span class="sc">'h'</span><span class="o">,</span><span class="sc">'e'</span><span class="o">,</span><span class="sc">'l'</span><span class="o">,</span><span class="sc">'l'</span><span class="o">,</span><span class="sc">'o'</span><span class="o">};</span>
+
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The char is "</span> <span class="o">+</span> <span class="n">a</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The int is "</span> <span class="o">+</span> <span class="n">x</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The float is "</span> <span class="o">+</span> <span class="n">f</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The double is "</span> <span class="o">+</span> <span class="n">d</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The long is "</span> <span class="o">+</span> <span class="n">l</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The byte is "</span> <span class="o">+</span> <span class="n">b</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The short is "</span> <span class="o">+</span> <span class="n">s</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The boolean is "</span> <span class="o">+</span> <span class="n">bool</span><span class="o">);</span>
+
+    <span class="n">String</span> <span class="n">helloString</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">stringmadeofchars</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Our string is "</span> <span class="o">+</span> <span class="n">helloString</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<p> </p>
+
+<p>The</p>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">()</span></code></pre></figure>
+
+<p>is a function that displays the data inside of the parenthesis in the console window of Intellij Idea.</p>
+
+<p>Notice the <strong>new</strong> keyword and the <strong>+</strong> sign there? Yeah the <strong>new </strong>keyword is use when declaring an object which well cover when we get to classes and objects and the <strong>+</strong> sign is what we call an “<strong>operator</strong>” which we’ll cover on the next topic. For now try the code on your own and be amazed!</p>
+
+<p>Congratulations, you have now created a simple program. You can download the full source code <strong><a href="https://github.com/NelzkieCoder/CodeWithEase/tree/master">here</a></strong></p>
+
+<p>You are now officially a programmer. A beginner programmer that is. But hey, remember that every <strong>PRO</strong> was once a <strong>BEGINNER.</strong></p>
+
+<p>On the next topic we’ll  cover arrays.</p>
+
+<p> </p>
+
+    <br />
+    <!-- 
+
+    
+ -->
+  </div>
+
+  
+
+  
+
+
+</article>
+
+
+      <footer class="site-footer">
+  <!-- SVG icons from https://iconmonstr.com -->
+
+  <!-- Github icon -->
+  
+
+  
+
+
+  <!-- Facebook icon -->
+  
+  
+
+  <!-- Instagram icon -->
+  
+
+  <!-- Twitter icon -->
+  
+  <span class="my-span-icon">
+    <a href="https://twitter.com/CodeandWave" target="_blank" aria-label="Nelzkie on Twitter" title="Nelzkie on Twitter">
+      <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+    </a>
+  </span>
+  
+
+  <!-- Linkedin icon -->
+  
+
+  <!-- RSS icon -->
+  <span class="my-span-icon hide-on-small">
+    <a href="/feed-en.xml" target="_blank" aria-label="RSS feed" title="Nelzkie's RSS feed">
+      <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.374 17c-.897 0-1.626-.727-1.626-1.624s.729-1.624 1.626-1.624 1.626.727 1.626 1.624-.729 1.624-1.626 1.624zm3.885 0c-.03-3.022-2.485-5.474-5.511-5.504v-2.406c4.361.03 7.889 3.555 7.92 7.91h-2.409zm4.081 0c-.016-5.297-4.303-9.571-9.592-9.594v-2.406c6.623.023 11.985 5.384 12 12h-2.408z"/></svg>
+    </a>
+  </span>
+
+  <!-- Contact icon -->
+  
+  
+    <span class="my-span-icon">
+      <a href="/contact.html" aria-label="Contact" title="Contact Nelzkie">
+        <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+      </a>
+    </span>
+  
+
+</footer>
+
+
+    </section>
+
+    <script type="text/javascript">
+      var menu = document.querySelector("nav.site-nav");
+      var checkbox = document.getElementById("nav-trigger");
+
+      // close menu if click outside menu
+      document.addEventListener("click", function(e) {
+        if (menu != e.target &&
+            ! isDescendant(menu, e.target)) {
+          checkbox.checked = false;
+        }
+
+      }, false);
+
+      function isDescendant(parent, child) {
+           var node = child.parentNode;
+           while (node != null) {
+               if (node == parent) {
+                   return true;
+               }
+               node = node.parentNode;
+           }
+           return false;
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+      <url>
+
+        <loc>/Java-Fundamentals-2.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/Java-Fundamentals-2.html" />
+        
+        
+        <lastmod>2017-10-28T21:13:28+13:00</lastmod>
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+
+        <loc>/152-Java-Fundaments-1.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/152-Java-Fundaments-1.html" />
+        
+        
+        <lastmod>2017-10-28T21:13:28+13:00</lastmod>
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+
+        <loc>/example-project-page.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/example-project-page.html" />
+        
+        
+        <lastmod>2017-10-07T00:00:00+13:00</lastmod>
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+  
+    
+      <url>
+        <loc>/404.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/404.html" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/tags/Android</loc>
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/tags/Java</loc>
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/tags/Projects</loc>
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/tags.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/tags.html" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/about.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/about.html" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/articles.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/articles.html" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/contact.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/contact.html" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/feed-en.xml</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/feed-en.xml" />
+        
+          <xhtml:link rel="alternate" hreflang="it" href="/feed-it.xml" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/feed-it.xml</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/feed-en.xml" />
+        
+          <xhtml:link rel="alternate" hreflang="it" href="/feed-it.xml" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/index.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/index.html" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/now.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/now.html" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/projects.html</loc>
+        
+        
+        
+          <xhtml:link rel="alternate" hreflang="en" href="/projects.html" />
+        
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/sitemaps.xml</loc>
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/assets/css/style.css</loc>
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/feed.xml</loc>
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+    
+      <url>
+        <loc>/feed.xslt.xml</loc>
+        
+        <changefreq>weekly</changefreq>
+      </url>
+    
+  
+</urlset>

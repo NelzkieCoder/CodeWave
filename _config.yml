@@ -50,7 +50,7 @@ theme: # leave it empty
 show_post_image_posts_list: false
 
 header:
-  image: /assets/patterns/symphony.png
+  image: 
 
 # social
 author:
@@ -58,9 +58,9 @@ author:
   short_bio:
     en: nelzkie.coder@gmail.com
 
-  picture: assets/img/profile-60.png
+  picture: assets/img/profile-small.png
 
-image: /assets/img/profile-225.png
+image: /assets/img/profile-small.png
 
 #twitter:
 #  username:
@@ -70,11 +70,12 @@ image: /assets/img/profile-225.png
 
 #  site:
 facebook:
+  username: code.withease.50
   publisher_id: 
-  profile_id: 
+  profile_id: 100022690963272
   app_id: 
-  authors: []
-  #pixelcode: 1670622619859349
+  authors: code.withease.50
+  pixelcode: 100022690963272
 
 
 # gitlab on site

@@ -4,7 +4,7 @@ title: "Repeat"
 tagline: "A simple goal and habit tracker"
 image: /assets/patterns/paisley.png
 header:
-  image: /assets/patterns/asanoha-400px.png
+  image: /assets/img/profile-small.png
 
 mobile_download:
   google_play: https://play.google.com/store/apps/details?id=com.nelzkie.coder.justfortoday

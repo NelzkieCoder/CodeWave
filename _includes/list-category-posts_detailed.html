@@ -26,7 +26,7 @@
 
      
 
-      <li> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+      <li> <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title | escape }}</a>
  
         <section  class="list_post_detailed">  
             {% include post-meta-info_detailed.html post_date=post.date post_lang=post.lang %}

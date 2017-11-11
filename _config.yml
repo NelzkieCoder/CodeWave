@@ -10,8 +10,8 @@ title: Code And Wave
 email: nelzkie.coder@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Just Code and Wave coders. Just Code and Wave
-baseurl: "/CodeWave" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "" # change this to the base hostname & protocol for your site
+baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "www.codeandwave.com" # change this to the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

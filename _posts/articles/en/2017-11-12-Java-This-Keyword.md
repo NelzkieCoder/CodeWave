@@ -12,7 +12,7 @@ date: 2017-11-12T08:13:28+00:00
 category: articles
 ---
 
-The **this** keyword can be very confusing for beginners because we don't know what is the **this** keyword refering to. In this topic we'll dicuss the use of **this** keyword in Java.
+The **this** keyword can be very confusing for beginners because we don't know what is the **this** keyword referring to. In this topic we'll dicuss the use of **this** keyword in Java.
 
 <!--break-->
 ### The uses of **this** keyword

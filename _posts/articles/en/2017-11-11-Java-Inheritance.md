@@ -159,6 +159,10 @@ super.name = "dog"
 
 <p><span class="warning"> <span style="font-weight:bold;">NOTE:</span> The <b>this</b> keyword can be a bit confusing cause it not only points to the base class, it can also points to functions and the class itself</span></p>
 
+If you want to know more about the <span style="color:#e4a048;"> this</span> keyword click [here]({% post_url 2017-11-12-Java-This-Keyword %})
+
+
+
 ## Conclusion
 
 Hopefully you gain a bit of understanding of how inheritance work. Remember to design your system well, if all functions share the same traits put them on the base class. Don't put anything in the base class that only one or two of your derived classes will use, this will lead to **tight coupling** if you are not careful. 

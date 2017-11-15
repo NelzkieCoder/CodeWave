@@ -1,7 +1,7 @@
 ---
 layout: category
 title: My Projects
-tagline: Projects that are release on playstore
+tagline: Projects that are released on playstore
 
 permalink: /projects.html
 header:

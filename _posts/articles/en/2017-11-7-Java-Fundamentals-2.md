@@ -14,7 +14,7 @@ lang: en
 category: articles
 ---
 
-## **Arrays**
+### Arrays
 What is an array? Think of array as a collection of data or information. It can be a collection [primitive type][jekyll-docs] we discuss earlier or objects(like classes) which we'll discuss on future topic.
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Java OOP - 1st pillar
-tagline: "Inheritance"
+title: Java OOP - Inheritance
+tagline: "The First Pillar of OOP"
 image: /assets/patterns/paisley.png
 header:
   image: /assets/patterns/asanoha-400px.png
@@ -14,7 +14,7 @@ category: articles
 
 Inheritance is one of the 4 pillars of Object Oriented Programming commonly known as **'OOP'**
 
-## What is inheritance?
+### What is inheritance?
 Inheritance is a concept where one class acquire all the properities and behaviors of another class.
 It  is usually represented as a **<span style="color:#e4a048;">Is - a</span>** relationship.
 
@@ -24,7 +24,7 @@ It  is usually represented as a **<span style="color:#e4a048;">Is - a</span>** r
 * A dog  ***<span style="color:#e4a048;">is an </span>*** animal
 * An apple ***<span style="color:#e4a048;">is a </span>*** fruit
 
-## Why use inheritance?
+### Why use inheritance?
 * Inheritance is used to achieve **<span style="color:#e4a048;">polymorphism</span>**(we'll takcle this on future topic)
 * It is also used to remove redudant code for traits that are the same as with other classes.
 

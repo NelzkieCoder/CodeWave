@@ -1,7 +1,7 @@
 ---
 layout: default
-tagtitle: Android Development
-tagline: All about Android
+tagtitle: Java Object Oriented Programming
+tagline: All about OOP concepts
 
 ---
 
@@ -14,12 +14,12 @@ tagline: All about Android
 {% endcapture %}
 
  {% assign tagvar = my_variable | remove: ".md" %}
- {{ tagvar }}
+ {{ tagvar }} -->
 
  
- {% assign s = site.tags.Android %} -->
+ {% assign s = site.tags.Fundamentals %}
 
- {% assign s = site.tags.Android %}
+
  
 
  <ul class="post-list">

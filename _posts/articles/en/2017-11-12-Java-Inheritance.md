@@ -6,7 +6,7 @@ image: /assets/patterns/paisley.png
 header:
   image: /assets/patterns/asanoha-400px.png
 tags: ["Java","OOP"]
-keywords: Java, OOP, 
+keywords: Java, OOP, Inheritance
 lang: en
 date: 2017-11-12T08:13:28+00:00
 category: articles

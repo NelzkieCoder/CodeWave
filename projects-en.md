@@ -1,9 +1,8 @@
 ---
 layout: category
-title: Projects
-tagline: These are your projects
-excerpt: >
-  These are your projects, listed chronologically. If you are not interested in showing off your projects, delete this page.
+title: My Projects
+tagline: Projects that are release on playstore
+
 permalink: /projects.html
 header:
   image: /assets/patterns/new_year_background.png
@@ -13,8 +12,7 @@ order: 2
 category: projects
 ---
 
-These are your projects, listed chronologically. If you are not interested in showing off your projects, delete this page.
 
-<h2>Recent Projects</h2>
+<h2>My Projects</h2>
 <div>&nbsp;</div>
 

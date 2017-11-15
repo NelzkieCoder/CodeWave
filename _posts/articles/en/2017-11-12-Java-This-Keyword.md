@@ -116,17 +116,19 @@ CodeAndWave
 public class Person {
         String name;
         int age;
-
     public Person() {
-        this("haha",1); // the this here is referring to the constructor that matches its signature 
+        this("CodeAndWave",20); // the this here is referring to the constructor that matches its signature
     }
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
+
     Person getPersonInfo() {
+
         return  this; // the this here is referring to current instance class
      }
+
 }
 
 public class Main {

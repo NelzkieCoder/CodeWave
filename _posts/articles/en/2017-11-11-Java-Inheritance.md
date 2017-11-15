@@ -8,7 +8,7 @@ header:
 tags: ["Java","OOP"]
 keywords: Java, OOP, Inheritance
 lang: en
-date: 2017-11-12T08:13:28+00:00
+date: 2017-11-11T08:13:28+00:00
 category: articles
 ---
 

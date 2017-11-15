@@ -100,8 +100,6 @@ public static void main(String[] args) {
 
         String[] strings = {"Hello","World","Code","and","Wave"};
         
-
-
         for (int a: intArrays){
             System.out.println(a);
         }

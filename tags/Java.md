@@ -18,7 +18,7 @@ tagline: All about Java
 
  
  {% assign s = site.tags.Java %} -->
-
+ {% assign s = site.tags.Java %}
 
  
 

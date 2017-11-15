@@ -362,6 +362,7 @@
         border-style: dotted;
         border-width: 1px;
         border-color: #e24469af;
+        display:inline-block
     }
 
     .btn-dark {
@@ -447,3 +448,8 @@
     }
 
     img[alt=image_projects] { width: 100px; height: 200px }
+
+
+    b, strong {
+        color: #e4a048;
+        }

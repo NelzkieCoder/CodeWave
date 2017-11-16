@@ -86,6 +86,7 @@ gitlab:
 github:
   owner_url: 
 
+google_analytics_key: UA-108796849-2
 
 twitter:
   username: CodeandWave

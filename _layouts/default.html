@@ -3,6 +3,14 @@
 <html lang="{{ page-lang }}">
 
   <head>
+
+  <!-- google analytics -->
+      {% if site.google_analytics and jekyll.environment == 'production' %}
+      {% include analytics.html %}
+      {% endif %}
+      
+      
+
     {% if page-lang == "en" %}
       {% assign page-lang-country = "en_US" %}
     {% elsif page-lang == "it" %}
@@ -79,6 +87,10 @@
     <!-- DO NOT MODIFY -->
     <!-- End Facebook Pixel Code -->
     {% endif %}
+
+
+
+
 
   </head>
   <body>

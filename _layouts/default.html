@@ -5,11 +5,11 @@
   <head>
 
   <!-- google analytics -->
-      {% if site.google_analytics and jekyll.environment == 'production' %}
+      <!-- {% if site.google_analytics and jekyll.environment == 'production' %}
       {% include analytics.html %}
       {% endif %}
-      
-      
+       -->
+      {% include analytics.html %}
 
     {% if page-lang == "en" %}
       {% assign page-lang-country = "en_US" %}

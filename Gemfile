@@ -6,7 +6,7 @@ gem 'jekyll', '3.6.2' # this is the Jekyll version we are working with
 # gem 'pygments.rb', '~> 0.6.3'
 # gem 'jekyll-seo-tag'
 # gem 'jekyll-email-protect'
-
+gem 'jekyll-admin', group: :jekyll_plugins
 # group :jekyll_plugins do
 #     gem 'jekyll-email-protect'
 #     # gem 'jekyll-seo-tag'

@@ -22,7 +22,7 @@ exclude: [vendor, "Gemfile", "Gemfile.lock"]
 # permalink: /:categories/:year/:month/:day/:title.html
 # none is equivalent to /:title.html
 # https://jekyllrb.com/docs/permalinks
-permalink: /:title/
+permalink: /:title.html
 
 # highlighter: pygments
 

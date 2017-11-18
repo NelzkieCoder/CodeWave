@@ -3,7 +3,6 @@ layout: category
 title: My Projects
 tagline: Projects that are released on playstore
 
-permalink: /projects.html
 header:
   image: /assets/patterns/new_year_background.png
 ref: projects

@@ -4,7 +4,7 @@ title: Tags
 tagtitle: Tags
 tagline: These are the tags associated with my articles post
 
-permalink: /Tag.html
+
 header:
   image: /assets/patterns/new_year_background.png
 ref: tags

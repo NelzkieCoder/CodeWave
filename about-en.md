@@ -3,7 +3,7 @@ layout: page
 title: About
 tagline: What is my purpose
 
-permalink: /about.html
+
 header:
   image: /assets/patterns/upfeathers.png
 ref: about

@@ -2,9 +2,7 @@
 layout: post
 title: Java - The this Keyword
 tagline: "Not this again!"
-image: /assets/patterns/paisley.png
-header:
-  image: /assets/patterns/asanoha-400px.png
+
 tags: ["Java","Fundamentals"]
 keywords: Java, Fundamentals, This, This Keyword
 lang: en

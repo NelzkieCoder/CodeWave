@@ -7,7 +7,6 @@
 #
 layout: home
 
-permalink: /index.html
 header:
   image: /assets/img/home-header.jpg
 

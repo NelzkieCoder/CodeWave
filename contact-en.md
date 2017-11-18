@@ -3,7 +3,7 @@ layout: page
 title: Contact
 tagline: Want to get in touch?
 
-permalink: /contact.html
+
 header:
   image: /assets/patterns/wov.png
 ref: contact

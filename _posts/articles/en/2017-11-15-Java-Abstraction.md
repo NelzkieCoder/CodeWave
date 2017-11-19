@@ -118,7 +118,7 @@ public class Abstraction {
         cat.CanEat();
         cat.CanSleep();
         cat.CanReproduce();
-        cat.MakeNoise();    // BOOM! dog meows
+        cat.MakeNoise();    // BOOM! cat meows
 
     }
 }

@@ -68,7 +68,7 @@ public abstract class Animal {
 }
 ```
 
-Abstract method **doesn't need** an implementation when declaring it because well its **abstract**. The implementation will happen on those concrete classess that derived from the animal class. Now every class that derived from the animal class **MUST**  (keep this in mind) **implement** the MakeNoise() or else the compiler will show an error. Here is the dog and cat implementation of MakeNoise():
+Abstract method **doesn't need** an implementation when declaring it because well it's **abstract** (*ba dum tss*). The implementation will happen on those concrete classess that derived from the animal class. Now, every class that derived from the animal class **MUST**  (keep this in mind) **implement** the MakeNoise() or else the compiler will show an error. Here is the dog and cat implementation of MakeNoise():
 
 ``` java
 public class Cat extends Animal {
@@ -96,6 +96,7 @@ public class Dog extends Animal {
         this.name = "Dog";
     }
 
+	// Here is the implementation of the abstract
     @Override
     protected void MakeNoise() {
         System.out.println("Woof Woof");
@@ -122,7 +123,7 @@ public class Abstraction {
     }
 }
 
-output:
+Output:
 Dog can eat
 Dog can sleep
 Dog can reproduce
@@ -157,7 +158,7 @@ public abstract class Animal {
 }
 ```
 
-Huh looks okay. Let's check the implementation of this:
+Huh! looks okay. Let's check the implementation:
 
 ``` java
 public class Dog extends Animal {
@@ -208,4 +209,4 @@ public abstract class CanFly {
     abstract void Fly();
 }
 ```
-Then derived from it? Nope too bad! You see you can only **EXTEND** to **ONE** class in java. It was by design. So how are we going to fix this? Fortunately for us there is **interface** which we'll cover on the next topic. Hopefully though you gain a bit of understanding about java abstraction and how to use abstract classes and methods. Don't worry though, I'll cover **interface**  next.
+Then derived from it? Nope! Too bad we can't! You see you can only **EXTEND** to **ONE** class or object in java. It was by design. So how are we going to fix this? Fortunately for us there is **interface** which we'll cover on the next topic. Hopefully though you gain a bit of understanding about java abstraction and how to use abstract classes and methods. Don't worry though, I'll cover **interface**  next.

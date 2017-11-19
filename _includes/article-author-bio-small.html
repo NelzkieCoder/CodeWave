@@ -6,13 +6,13 @@
 {% if page_author_name %}
 <div class="author-article">
   <div class="author-picture">
-    <a href="https://www.facebook.com/{{ site.facebook.username }}" target="_blank">
-      <img src="{{ page_author_picture }}" class="author-image" alt="{{ page_author_name }} {{ site.t[page.lang].on-word }} Facebook">
+    <a href="{{site.google_plus.owner_url}}" target="_blank">
+      <img src="{{ page_author_picture }}" class="author-image" alt="{{ page_author_name }} {{ site.t[page.lang].on-word }} google plus">
     </a>
   </div>
 
   <div class="author-bio">
-    <a href="https://www.facebook.com/{{ site.facebook.username }}" target="_blank">
+    <a href="{{site.google_plus.owner_url}}" target="_blank">
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">
         {{ page_author_name }}
       </span></span>

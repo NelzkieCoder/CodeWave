@@ -137,7 +137,7 @@ Meow Meow    -----> Cat meows
 
 
 ### When do we use abstract method?
-The CanEat(), CanSleep(), and CanReproduce() methods are all **concrete methods**(meaning all these methods have their definition on the same class they were declared). Why not make it abstract? Well think about it. Is there any animal at all that sleep differently? Like  sleeping with their eyes open perhaps? Ofcourse not. These question can also be apply to our other two functions.  So **when exactly** should we use abstract method?  Answer is, if you want to **require** your **certain class** to implement a certain method but with its own definition. That is in our example above, we required our cat and dog class to be able to make a noise via MakeNoise() but each with their own definition.
+The CanEat(), CanSleep(), and CanReproduce() methods are all **concrete methods**(meaning all these methods have their definition on the same class they were declared). Why not make it abstract? Well think about it. Is there any animal at all that sleep differently? Like  sleeping with their eyes open perhaps? Ofcourse not. So there really is no point of having each class have their own implementation of these method if every animal sleep the same. This logic can be also applied to our other two method.  Then **when exactly** should we use abstract method?  Answer is, if you want to **require** your **certain class** to implement a certain method but with its own definition. That is in our example above, we required our cat and dog class to be able to make a noise via MakeNoise() but each with their own definition. Cause you know, every animal make different kind of sound.
 
 
 ### Pitfalls of using abstract method

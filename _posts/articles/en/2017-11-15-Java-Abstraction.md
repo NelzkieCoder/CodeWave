@@ -137,7 +137,7 @@ Meow Meow    -----> Cat meows
 
 
 ### When do we use abstract method?
-The CanEat(), CanSleep(), and CanReproduce() methods are all **concrete methods**(meaning all these methods have their definition on the same class they were declared). Why not make it abstract? Well think about it. Is there any animal at all that sleep differently? Like I sleeping with their eyes open perhaps? No right. These question can also be apply to our other two functions.  So **when exactly** should we use abstract method?  Answer is, if you want to **require** your **certain class** to implement a certain method but with its own definition. That is in our example above, we required our cat and dog class to be able to make a noise via MakeNoise() but each with their own definition.
+The CanEat(), CanSleep(), and CanReproduce() methods are all **concrete methods**(meaning all these methods have their definition on the same class they were declared). Why not make it abstract? Well think about it. Is there any animal at all that sleep differently? Like  sleeping with their eyes open perhaps? Ofcourse not. These question can also be apply to our other two functions.  So **when exactly** should we use abstract method?  Answer is, if you want to **require** your **certain class** to implement a certain method but with its own definition. That is in our example above, we required our cat and dog class to be able to make a noise via MakeNoise() but each with their own definition.
 
 
 ### Pitfalls of using abstract method
@@ -215,4 +215,4 @@ public abstract class CanFly {
     abstract void Fly();
 }
 ```
-Then derived from it? Nope! Too bad we can't! You see you can only **EXTEND** to **ONE** class or object in java. It was by design. So how are we going to fix this? Fortunately for us there is **interface** which we'll cover on the next topic. Hopefully though you gain a bit of understanding about java abstraction and how to use abstract classes and methods. Don't worry though, I'll cover **interface**  next.
+Then derived from it? Nope! Too bad we can't! You see you can only **EXTEND** to **ONE** class or object in java. It was by design. So how are we going to fix this? Fortunately for us there is **interface** which we'll cover on the next topic. Hopefully though you gain a bit of understanding about java abstraction, when and how to use abstract classes and methods. Happy coding!

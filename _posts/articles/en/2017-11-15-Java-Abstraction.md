@@ -68,7 +68,7 @@ public abstract class Animal {
 }
 ```
 
-Abstract method **doesn't need** an implementation when declaring it because well it's **abstract** (*ba dum tss*). The implementation will happen on those concrete classess that derived from the animal class. Now, every class that derived from the animal class **MUST**  (keep this in mind) **implement** the MakeNoise() or else the compiler will show an error. Here is the dog and cat implementation of MakeNoise():
+Abstract method **doesn't need** a definition when declaring it because well it's **abstract** (*ba dum tss*). The definition  will be implemented on those concrete classess that derived from the animal class. Now, every class that derived from the animal class **MUST**  (keep this in mind) **implement** with ofcourse a defnition the MakeNoise() or else the compiler will show an error. Think of it as a contract. Here is the dog and cat implementation of MakeNoise():
 
 ``` java
 public class Cat extends Animal {

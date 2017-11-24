@@ -43,7 +43,7 @@ public abstract class Animal {
     }
 }
 ```
-There isn't much difference to our [inherticane]({% post_url 2017-11-11-Java-Inheritance %}) code. We only add the keyword **abstract** here. But with abstract class also comes **abstract method.** In our example, every animal make different noises. Cat "meows" and the dog "woofs". Ofcourse these implementation are specific  only for derived classes of animal class. We also want  to make sure that if one of our angels(keep in mind you are a so called "god" in our story here) decided to make their own animal we want them to make a noise as well. So we make this MakeNoise() a requirement when creating an animal. How do we do it? Well we use **abstract** method.
+There isn't much difference to our [inherticane]({% post_url 2017-11-11-Java-Inheritance %}) code. We only add the keyword **abstract** here. But with abstract class also comes **abstract method.** In our example, every animal make different noises. Cat "meows" and the dog "woofs". Ofcourse these implementation are specific  only for derived classes of animal class. We also want  to make sure that if one of our angels(keep in mind you are a so called "god" in our story here) decided to make their own animal we want them to make a noise as well. So we make this MakeNoise() a **REQUIREMENT** when creating an animal. How do we do it? Well we use **abstract** method.
 
 `  protected abstract void MakeNoise();`
 
@@ -135,7 +135,13 @@ Meow Meow    -----> Cat meows
 
 ```
 
-Pretty cool right? But what if one of your angels want to make a bird? Should we add a CanFly() method on our abstract class? Well let's see:
+
+### When do we use abstract method?
+The **CanEat()**, **CanSleep(),** and **CanReproduce() **methods are all **concrete method**s(meaning all these methods have their definition on the same class they were declared). Why not make it abstract? Well think about it. Is there any animal at all that sleep differently? Like I sleeping with their eyes open perhaps? No right. These question can also be apply to our other two functions.  So **when exactly** should we use abstract method?  Answer is, if you want to **require** your **certain class** to implement a certain method but with its own definition. That is in our example above, we required our cat and dog class to be able to make a noise via MakeNoise() but each with their own definition.
+
+
+### Pitfalls of using abstract method
+Supposed one of your angels want to make a bird? Should we add a CanFly() method on our abstract class? Well let's see:
 
 
 ``` java

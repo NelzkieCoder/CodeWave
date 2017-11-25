@@ -144,7 +144,7 @@ public class Pegasus extends Animal implements HasHorn, CanFly {
 }
 ```
 
-See that we implements the HasHorn and CanFly? Pretty cool right. You can add as many interface as you want. If you want a pegasus that can breath fire just make an interface of it and then implement it. 
+See that we implemented the HasHorn and CanFly? Pretty cool right. This is what **multiple inheritance** looks like. You can add as many interface as you want. If you want a pegasus that can breath fire just make an interface of it and then implement it. 
 
 
 ### Conclusion

@@ -3,7 +3,7 @@ title: Java - Abstraction
 lang: en
 category: articles
 layout: post
-tagline: Abstract class and Interface
+tagline: Abstract class and methods
 image: "/assets/img/profile-small.png"
 header:
   image: "/assets/img/profile-small.png"

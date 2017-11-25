@@ -109,6 +109,8 @@ public class Dog extends Animal {
     }
 ```
 
+Hopefully this code makes sense. The code is self explanatory. If you still don't understand why, you might want to code this to your IDE and then  run it.
+
 ### Achieving Multiple inheritance
 Now supposed your other angel wants to make a pegasus(a mythical creature in greek mythology)? A pegasus can fly and  has a horn  and has the traits of any other animals like eating and sleeping. The only thing we are missing here then is the horn. So let's make an interface for that.
 
@@ -146,4 +148,4 @@ See that we implements the HasHorn and CanFly? Pretty cool right. You can add as
 
 
 ### Conclusion
-If we want to be better at designing our app or system  and make our objects **loosely coupled** it is important to understand the use of interface.  Hopefully this article shed you some light about  how interface works. You can keep on coding  without using interface but as soon as your codebase becomes really large, you will find that it is very diffcult to maintain or change it because it is **tightly coupled**. While it might be confusing at first, keep in mind that it takes time to fully understand how interface works. But as soon as you do, you are going to love it. Till next time, HAPPY CODING!
+If we want to be better at designing our app or system  and make our objects **loosely coupled** it is important to understand the use of interface.  Hopefully this article shed you some light about  how interface works. You can keep on coding  without using interface but as soon as your codebase becomes really large, you will find that it is very diffcult to maintain or change it because it is **tightly coupled**. While it might be confusing at first, keep in mind that it takes time to fully understand how interface works. But as soon as you do, you are going to love it.  Here is the [source code](https://github.com/NelzkieCoder/CodeAndWave_Topic_Source/tree/master/Java/Abstraction/src) Till next time, HAPPY CODING!

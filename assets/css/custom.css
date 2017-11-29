@@ -447,7 +447,7 @@
         border-left-color: #232c58;
     }
 
-    img[alt=image_projects] { width: 100px; height: 200px }
+    img[alt=image_projects] { width: 100px; height: 200px; }
 
 
     b, strong {

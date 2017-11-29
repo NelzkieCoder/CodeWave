@@ -10,11 +10,11 @@ header:
 tags:
 - Java
 - OOP
-keywords: Java, Fundamentals, This, This Keyword
+keywords: Java, OOP, Abstraction
 date: '2017-11-15 08:13:28 +0000'
 ---
 
-Abstraction is a way of well making a certain object abstract. It is a way of hiding the implementation to the user. Abstract classes also can't be instantiated but can only be subclassed(derived from it). Meaning you can't do it like this:
+Abstraction is a way of well making a certain object abstract. It is a way of **hiding the implementation** to the user. Abstract classes also can't be instantiated but can only be subclassed(derived from it). Meaning you can't do it like this:
 
 <!--break-->
 
@@ -24,7 +24,7 @@ Abstraction is a way of well making a certain object abstract. It is a way of hi
 
 There are two ways to achieve abstraction in java. It is using:
 * **Abstract class**
-* **Interface**
+* **[Interface]({% post_url 2017-11-25-java-interface %})**
 
 ### Let's start with Abstract class
 To make an abstract class one must use the keyword **abstract** when declaring a class we do it like this:
